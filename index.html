@@ -10,28 +10,21 @@
 <body>
     Oi
 </body>
-
 <script>
-
-function senhaApropriada (senha) {
-
-    const tamanhoSenha = senha.length >=8
-    const tamMaiuscula = /[A-Z]/.test(senha)
-    const temMinuscula = /[a-z]/.test(senha)
-    const caractereEspecial = /[@#]/.test(senha)
-    const temNumero = /[0-9]/.test(senha)
-
-    if (tamanhoSenha && temMinuscula && temMinuscula && caractereEspecial && temNumero) {
-        console.log("Senha Válida")
-    } else {
-        console.log("Senha Não Inválida")
+    function senhaApropriada(senha) {
+        const tamanhoSenha = senha.length >= 8
+        const tamMaiuscula = /[A-Z]/.test(senha)
+        const temMinuscula = /[a-z]/.test(senha)
+        const caractereEspecial = /[@#]/.test(senha)
+        const temNumero = /[0-9]/.test(senha)
+        if (tamanhoSenha && temMinuscula && temMinuscula && caractereEspecial && temNumero) {
+            console.log("Senha Válida")
+        } else {
+            console.log("Senha Não Inválida")
+        }
     }
-
-}
-
-senhaApropriada("EduardoAntonio")
-senhaApropriada("abcdefg")
-
+    senhaApropriada("EduardoAntonio")
+    senhaApropriada("abcdefg")
 </script>
 
 </html>
