@@ -15,7 +15,6 @@ if (idade >= 18 && temCarteira == true) {
 }
 let lista = ["Maça", "Uva", "Laranja"]
 console.log(lista[2])
-
 const n1 = 10
 const n2 = 10
 const res = n1 * n2

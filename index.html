@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     Oi
 </body>
 <script>
-    function senhaApropriada(senha) {
+    function SenhaApropriada(senha) {
         const tamanhoSenha = senha.length >= 8
         const tamMaiuscula = /[A-Z]/.test(senha)
         const temMinuscula = /[a-z]/.test(senha)
@@ -20,11 +18,14 @@
         if (tamanhoSenha && temMinuscula && temMinuscula && caractereEspecial && temNumero) {
             console.log("Senha Válida")
         } else {
-            console.log("Senha Não Inválida")
+            console.log("Senha Inválida")
         }
     }
-    senhaApropriada("EduardoAntonio")
-    senhaApropriada("abcdefg")
+    SenhaApropriada("EduardoAntonio1@")
+    SenhaApropriada("Oi@1")
+    function SomarDoisNúmeros(a, b) {
+        return console.log(a * b)
+    }
+    SomarDoisNúmeros(10, 100)
 </script>
-
 </html>
