@@ -13,36 +13,24 @@
 
 <script>
 
-    let i = 0
+function senhaApropriada (senha) {
 
-    while (i <= 10) {
-        console.log(i++)
-    }
+    const tamanhoSenha = senha.length >=8
+    const tamMaiuscula = /[A-Z]/.test(senha)
+    const temMinuscula = /[a-z]/.test(senha)
+    const caractereEspecial = /[@#]/.test(senha)
+    const temNumero = /[0-9]/.test(senha)
 
-    function SomarDoisNumeros(a, b) {
-        return console.log(a * b)
-    }
-    SomarDoisNumeros(1, 100)
-
-    let idade = 18
-    let temCarteira = true
-
-    if (idade >= 18 && temCarteira == true) {
-        console.log("Pode Dirigir")
+    if (tamanhoSenha && temMinuscula && temMinuscula && caractereEspecial && temNumero) {
+        console.log("Senha Válida")
     } else {
-        console.log("Não Pode Dirigir")
-
+        console.log("Senha Inválida")
     }
 
-    let lista = ["Maça", "Uva", "Laranja"]
-    console.log(lista[2])
+}
 
-    const n1 = 10
-    const n2 = 10
-    const res = n1 * n2
-
-    console.log("A Soma Entre", n1, "&", n2, "É Igual a", res)
-
+senhaApropriada("EduardoAntonio")
+senhaApropriada("abcdefg")
 
 </script>
 
